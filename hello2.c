@@ -2,5 +2,5 @@
 
 int main()
 {
-    printf("Hell World!\n");
+    printf("Hell World.\n");
 }
