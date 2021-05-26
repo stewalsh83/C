@@ -4,12 +4,11 @@
 int main( int argc, char const *argv[] )
 {
 	int num;
-	num = atoi(argv[1]); /* assigning a variable to argv[1]*/ 
+	num = atoi(argv[1]); // assigning a variable to argv[1]
 
-	if(argc == 2){ /* if pointer is = to 2 then it will run the while loop */
+	if(argc == 2){ // if argc is = to 2 then it will run the while loop
 
-		while( num != 1 ){ /* loop until 1 is reached */
-
+		while( num != 1 ){ // loop until 1 is reached
 			if( num % 2 == 0 ){     /* hailstone formula */
 				num = ( num / 2 );
 			} else {
@@ -17,9 +16,6 @@ int main( int argc, char const *argv[] )
 			}
 			printf( "%d\n", num ); 
 		}
-			
 	}
-
 	return 0;
-
 }
