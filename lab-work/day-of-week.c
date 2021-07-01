@@ -4,7 +4,7 @@
 
 int main(int argc, char *argv[])
 {
-    const char *week[] = 
+    const char *Week[] = 
     {
         "Monday",
         "Tuesday",
@@ -14,14 +14,12 @@ int main(int argc, char *argv[])
         "Saturday",
         "Sunday",
     };
+
     int day = atoi(argv[1]);
-    if(day > 0 && day < 8)
-    {
-        printf("%5d = %s\n", day, week[day-1]);
-    }
-    else
-    {
+    if(day < 1 || day > 7)
         printf("Invalid input!\n");
-    }
+    
+    printf("%5d = %s\n", day, Week[day-1]);
+    
     return 0;
 }
