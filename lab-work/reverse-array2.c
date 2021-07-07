@@ -1,22 +1,20 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/* UNFINISHED */
-
 int main(int argc, char *argv[])
 {
-    int i, j, temp, size;
-    int *array = atoi(argv[i]);
-    //int length = argc;
-    //int *array = (int*)malloc(size*sizeof(int));
-	//int array[100] = {i};
-	//*array = atoi(argv[i]);
+    int n, i, j, temp;
+	int size = 0;
 
-	// Inserting elements into the array
+	for(n = 1; n < argc; n++){
+		size++;
+	}
+
+	int array[size];
 	for (i = 0; i <= size; i++)
-        printf("%d", array[i]);
+		array[i] = atoi(argv[i + 1]);
 
-	j = i - 1;
+	j = size - 1;
 	i = 0;
 
 	while (i < j)
@@ -29,10 +27,8 @@ int main(int argc, char *argv[])
 	}
 
 	for (i = 0; i < size; i++)
-	{
 		printf("%d \n", array[i]);
-	}
 
 	printf("\n");
-	return (0);
+	return 0;
 }
