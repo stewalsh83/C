@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+/* UNFINISHED */
 int main(int argc, char *argv[])
 {
     int n, i, j, temp;
@@ -10,25 +10,21 @@ int main(int argc, char *argv[])
 		size++;
 	}
 
-	int array[10]; // int array[size];
+	// int array[10];
+    char array[10];
 	array[size];
 	for (i = 0; i <= size; i++)
-		array[i] = atoi(argv[i + 1]);
+		// array[i] = atoi(argv[i + 1]);
+        array[i] = *argv[i + 1];
 
-	j = size - 1;
 	i = 0;
-
-	while (i < j)
+	while (i < size)
 	{
-		temp = array[i];
-		array[i] = array[j];
-		array[j] = temp;
 		i++;
-		j--;
 	}
 
-	for (i = 0; i < size; i++)
-		printf("%d \n", array[i]);
+	for (i = 0; i < 5; i++)
+		printf("%s \n", array[i]);
 
 	printf("\n");
 	return 0;
